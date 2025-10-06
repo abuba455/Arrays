@@ -4,5 +4,7 @@ let cars = [
     {brand: 'ferrari', pricce: 18000}
 ]
 
-let brands = cars.map(car => car.price)
-console.log(brands)
+let afforableBrands = cars.filter(car => car.price <= 40000).map(car => car.brand)
+console.log(afforableBrands)
+
+
